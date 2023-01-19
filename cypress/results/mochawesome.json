@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-01-19T06:36:14.165Z",
+    "end": "2023-01-19T06:36:51.577Z",
+    "duration": 37412,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "404d3e5e-3c19-4277-bc8d-0453cd9f3c16",
+      "title": "",
+      "fullFile": "cypress/e2e/test/example.cy.js",
+      "file": "cypress/e2e/test/example.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dd4a1de8-3d7a-4304-bc79-6af147d79d0e",
+          "title": "example test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "as a user I should click javascript, click polymer, creat 3 events",
+              "fullTitle": "example test as a user I should click javascript, click polymer, creat 3 events",
+              "timedOut": null,
+              "duration": 30275,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `div[class=\"horizontal layout style-scope paper-tabs\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `div[class=\"horizontal layout style-scope paper-tabs\"]`, but never found it.\n    at HomePage.findExample (webpack:///./cypress/pageObject/HomePage.js:4:18)\n    at Tools.selectExample (webpack:///./cypress/tools/Tools.js:10:17)\n    at Context.eval (webpack:///./cypress/e2e/test/example.cy.js:16:10)",
+                "diff": null
+              },
+              "uuid": "af5a9dec-3e6a-4cd8-a716-5383e1e3541e",
+              "parentUUID": "dd4a1de8-3d7a-4304-bc79-6af147d79d0e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "af5a9dec-3e6a-4cd8-a716-5383e1e3541e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 30275,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "code": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}
