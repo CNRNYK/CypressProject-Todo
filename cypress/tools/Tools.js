@@ -9,6 +9,7 @@ class Tools {
     selectExample(example) {
         homePage.findExample(example).click()
     }
+    
     selectIssue(issue) {
         homePage.findIssue(issue).click()
     }
@@ -30,6 +31,12 @@ class Tools {
         polymerPage.findRemovedItem().each(element => {
             cy.wrap(element).should('not.contain', item);
         });
+    }
+
+    editSelectedItem(item, newItem){
+        polymerPage.findItemToEdit(item).clear()
+            .type(newItem)
+            .type('{enter}');
     }
 
 }

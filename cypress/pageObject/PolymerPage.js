@@ -20,6 +20,14 @@ class PolymerPage {
         return cy.get('label[class="style-scope td-item"]');
 
     }
+
+    findItemToEdit(item) {
+
+        return cy.get(`label[class="style-scope td-item"]:contains(${item})`)
+            .dblclick()
+            .parents()
+            .find('input[class="edit style-scope td-item"]')
+    }
 }
 
 module.exports = { PolymerPage }
