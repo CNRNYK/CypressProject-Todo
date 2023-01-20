@@ -7,19 +7,22 @@ const polymerPage = new PolymerPage();
 class Tools {
 
     selectExample(example) {
-        homePage.findExample(example).click()
+        homePage.findExample(example).click();
     }
     
     selectIssue(issue) {
-        homePage.findIssue(issue).click()
+        homePage.findIssue(issue).click();
     }
 
     createEvent(item) {
-        polymerPage.findEventBox().type(item).type('{enter}')
+        cy.reload();
+        polymerPage.findEventBox().type(item).type('{enter}');
     }
 
     checkEventIsCreated(item) {
+        cy.reload();
         polymerPage.findCreatedEvent(item).should('have.text', item);
+
     }
 
     removeSelectedItem(item) {
